@@ -10,8 +10,8 @@
                 <v-card-title>{{character.name}}</v-card-title>
                 <v-card-subtitle>
                   <v-chip
-                    :color="character.status ? 'green' : (character.status === false ? 'red' : 'gray')"
-                    :text="character.status ? 'Alive' : (character.status === false ? 'Dead' : 'Unknown')"
+                    
+                    :text="character.status"
                     class="text-uppercase"
                     label
                     size="small"
@@ -42,7 +42,7 @@ export default {
   data () {
     return {
       characters: [], 
-      info:[],
+      info:[],      
     }
   },
   mounted () {
